@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "foundation-sites": "^6.9.0",
+    "milligram": "^1.4.1",
+    "tailwindcss": "^4.3.5"
+  }
+}
