@@ -1,3 +1,73 @@
-main {
+body {
     font-family: 'Quicksand', sans-serif;
+    font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+    background-color: #b0fcd1;
+    font-weight: 300;
+}
+
+#nav .button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+    background-color: #d1b0fc;
+}
+
+#nav .button:hover {
+    background-color: #c599fd;
+}
+
+@media (max-width: 640px) {
+    #nav .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #nav .column {
+        flex: 0 0 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+        min-width: 0;
+        text-align: center;
+    }
+
+    #milligramHeaders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #milligramHeaders h1 {
+        color: black;
+        font-weight: 400;
+        font-size: clamp(3rem, 2rem + 1vw, 2.875rem);
+    }
+
+    #milligramHeaders h2 {
+        margin-top: -1rem;
+        color: black;
+        font-weight: 400;
+        font-size: clamp(1.625rem, 1.375rem + 1vw, 2.25rem);
+    }
+}
+
+
+
+
+@media (min-width: 641px) {
+    #nav .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #nav .column {
+        flex: 1;
+        min-width: 0;
+    }
 }

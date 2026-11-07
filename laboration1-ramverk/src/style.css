@@ -1,31 +1,92 @@
 body {
   background-color: rgb(176, 252, 209);
   font-family: "Quicksand", sans-serif;
+  font-size: clamp(0.875rem, 0.575rem + 1.2vw, 1.625rem);
   font-weight: 300;
 }
 
-#nav {
-  width: 100%;
+@media (max-width: 640px) {
+  #navList {
+    margin-top: 1rem;
+    padding-inline-start: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  #navList li {
+    list-style: none;
+    text-decoration: none;
+    min-width: 0;
+    text-align: center;
+  }
+
+  #navList a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    height: 2rem;
+    line-height: 2rem;
+
+    background-color: #d1b0fc;
+    border: 0.1rem solid #9b4dca;
+    border-radius: 0.4rem;
+
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #navList a:hover {
+    background-color: #c599fd;
+  }
 }
 
-#navList {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  list-style: none;
-  padding-bottom: 1rem;
-  padding-inline-start: 0;
-  border-bottom: 1px solid darkgray;
+
+@media (min-width: 640px) {
+  #navList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-inline-start: 0;
+
+  }
+
+  #navList li {
+
+    list-style: none;
+  }
+
+  #navList a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.5rem;
+
+    background-color: #d1b0fc;
+    border: 0.1rem solid #9b4dca;
+    border-radius: 0.4rem;
+
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #navList a:hover {
+    background-color: #c599fd;
+  }
 }
 
-#navList a {
-  text-decoration: none;
-  color: black;
-}
-
-#navList a:hover {
-  text-decoration: underline;
-}
 
 #main {
   width: 100%;
@@ -55,19 +116,29 @@ body {
   grid-column-gap: 1px;
 }
 
+#frameworkTable img {
+  max-width: 100%;
+  width: 45%;
+}
+
+
 .frameworkP {
-  font-size: 12px;
-  margin-top: -1rem;
+  font-size: clamp(0.5rem, 0.3rem + 0.8vw, 1rem);
+  margin-top: -0.5rem;
 }
 
 #milligram {
   width: 100%;
   background-color: rgb(176, 252, 209);
-  
+
   font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#milligram h2 {
+  font-size: clamp(1rem, 0.6rem + 1.6vw, 2rem);
 }
 
 #foundation {
@@ -79,6 +150,10 @@ body {
   flex-direction: column;
 }
 
+#foundation h2 {
+  font-size: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+}
+
 #tailwind {
   width: 100%;
   background-color: rgb(176, 252, 209);
@@ -86,4 +161,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#tailwind h2 {
+  font-size: clamp(1rem, 0.6rem + 1.6vw, 2rem);
 }
