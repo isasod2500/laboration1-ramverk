@@ -27,10 +27,93 @@
       <h1>Milligram</h1>
       <h2>"A minimalistic CSS framework"</h2>
     </section>
-    <img href="public/milligram.svg">
+    <img src="public/milligram.svg">
     <section id="milligramText">
-
+      <a class="button button-outline" href="https://milligram.io/">
+        <p id="milligramA">Milligrams webbplats</p>
+      </a>
+      <p class="milligramP">
+        Milligram är ett s.k. minimalistiskt ramverk. Milligram bygger på att vara ett lätt ramverk som introducerar så lite nya paket som möjligt, men dem allra nödvändigaste.
+      </p>
+      <p class="milligramP">
+        Det är det första av dem tre ramverken jag arbetat med. Jag tänkte att det skulle vara en bra början innan jag dyker in i dem djupare och större ramverken. Rent spontant gillar jag att man fortfarande kan göra det mesta själv och att ramverket hjälper med delar av webbplatsen som antingen är krångligare eller bara långtråkiga att skapa och kopiera överallt.
+      </p>
+      <p class="milligramP">
+        Jag tyckte egentligen inte att det var så stor skillnad mellan traditionell HTML och CSS när jag skapade tabellen och formuläret nedan. Det snabbaste var att implementera "submit" knappen, men annars fick jag skriva det mesta själv. Det jag kunde gjort, men som jag inte behövde, var att använda en klass som heter "float-right" i formuläret för checkboxen.
+      </p>
+      <p class="milligramP">
+        Eftersom Milligram är så pass minimalistiskt känns det som att man ändå måste skriva majoriteten av sakerna själv. Det främsta jag märkte var att knapparna var lätta att skapa och designa, direkt utifrån klassen man gav dem.
+      </p>
     </section>
+    <h3>Tabell och formulär</h3>
+    <div id="tableWrapper">
+      <table id="milligramTable">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Recommend</th>
+            <th>Comments</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sweden</td>
+            <td>Yes</td>
+            <td>Clean beautiful country and capital</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td>Yes</td>
+            <td>Perfect ski country and lots of snow in winter. Expensive</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Denmark</td>
+            <td>No</td>
+            <td>Strange language and there's only Tuborg to drink</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td>No</td>
+            <td>Country is nice but the people are very quiet and distant</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Iceland</td>
+            <td>Yes</td>
+            <td>Loved the geysers and the whalewatching. But very expensive</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="formWrapper">
+      
+      <form>
+        <fieldset>
+          <label for="country">Country</label>
+          <input type="text" placeholder="Germany" id="country">
+          <input type="checkbox" id="recommend">
+          <label class="label-inline" for="recommend">Do you recommend traveling here?</label>
+          <label for="comments">Comment</label>
+          <textarea placeholder="Great food and perfekt hiking trails!" id="comments"></textarea>
+          <label for="rating">Rating</label>
+          <select id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <div id="buttonWrapper">
+            <input class="button-primary" type="submit" value="Submit">
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </article>
 
 </main>

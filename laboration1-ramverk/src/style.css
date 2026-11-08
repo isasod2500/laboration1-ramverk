@@ -1,7 +1,7 @@
 body {
   background-color: rgb(176, 252, 209);
   font-family: "Quicksand", sans-serif;
-  font-size: clamp(0.875rem, 0.575rem + 1.2vw, 1.625rem);
+  font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
   font-weight: 300;
 }
 
@@ -103,6 +103,7 @@ body {
 }
 
 .indexP {
+  font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
   min-width: 35ch;
   max-width: 50ch;
 }
