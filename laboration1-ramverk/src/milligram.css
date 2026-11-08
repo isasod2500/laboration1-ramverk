@@ -1,3 +1,5 @@
+@import "milligram/dist/milligram.min.css";
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
@@ -74,13 +76,16 @@ body {
     }
 
     #milligramText a {
+        color:rgb(155, 77, 202);
         margin: 1rem;
     }
 
     #milligramText a:hover {
-        border-color: rgb(255, 54, 255);
-        color: rgb(255, 54, 255);
+        
+        background-color: #c599fd;
+        color: white;
         text-decoration: underline;
+        transition: all 250ms linear;
     }
 
 

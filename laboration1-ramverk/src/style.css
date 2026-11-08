@@ -1,7 +1,7 @@
 body {
   background-color: rgb(176, 252, 209);
   font-family: "Quicksand", sans-serif;
-  font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+  font-size: clamp(1rem, 0.643rem + 1.143vi, 1.5rem);
   font-weight: 300;
 }
 
@@ -31,7 +31,7 @@ body {
     line-height: 2rem;
 
     background-color: #d1b0fc;
-    border: 0.1rem solid #9b4dca;
+    border: 1px solid #9b4dca;
     border-radius: 0.4rem;
 
     color: white;
@@ -72,7 +72,7 @@ body {
     padding: 0.5rem;
 
     background-color: #d1b0fc;
-    border: 0.1rem solid #9b4dca;
+    border: 1px solid #9b4dca;
     border-radius: 0.4rem;
 
     color: white;
@@ -103,7 +103,7 @@ body {
 }
 
 .indexP {
-  font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+  font-size: clamp(1rem, 0.643rem + 1.143vi, 1.3rem);
   min-width: 35ch;
   max-width: 50ch;
 }

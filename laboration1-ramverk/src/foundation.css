@@ -1,0 +1,98 @@
+@import "foundation-sites/dist/css/foundation.css";
+
+body {
+    background-color: rgb(176, 252, 209);
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(1rem, 0.643rem + 1.143vi, 1.5rem);
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#heading-wrapper h1,
+#heading-wrapper h2 {
+    max-width: 35ch;
+    font-weight: 300;
+}
+
+#heading-wrapper img {
+    width: 20%;
+    max-width: 25%;
+}
+
+.hollow.button.small {
+    margin: 1rem;
+    border-radius: 5px;
+    color: #9b4dca;
+    text-transform: uppercase;
+    border: 1px solid #9b4dca;
+}
+
+.hollow.button.small:hover {
+    color: white;
+    background-color: #c599fd;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 639px) {
+    nav .grid-x {
+        row-gap: 1rem;
+    }
+
+    #formWrapper {
+        text-align: center;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+}
+
+
+.grid-x .cell {
+    background-color: #d1b0fc;
+    border-radius: 0.4rem;
+    border: 1px solid #9b4dca;
+}
+
+.grid-x .small-up-2 {
+    padding: 1rem;
+}
+
+
+
+.cell.large-auto a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 2rem;
+    line-height: 2rem;
+
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cell.large-auto:hover {
+    background-color: #c599fd;
+}
+
+.grid-container.full {
+    text-align: center;
+    padding: 1rem;
+
+}
