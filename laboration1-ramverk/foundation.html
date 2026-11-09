@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav id="nav">
       <div class="grid-container full">
 
         <div class="grid-x grid-margin-x grid-padding-x small-up-2 medium-up-4">
@@ -28,23 +28,80 @@
   <main>
     <article id="foundationArticle">
       <div id="heading-wrapper">
-        <h1>Foundation</h1>
-        <h2>"The most advanced responsive front-end framework in the world"</h2>
+        <h2>Foundation</h2>
+        <h3>"The most advanced responsive front-end framework in the world"</h3>
         <img src="public/foundation.svg">
         <a class="hollow button small" href="https://get.foundation/index.html">Foundations webbplats</a>
       </div>
       <section id="foundationText">
 
         <p class="foundationP">
+          Foundation är ett komponentbaserat ramverk som lägger stor vikt på responsivitet. Många av komponenterna man kan använda sig av, så som knappar och tabeller, innehåller redan regler för responsivitet vilket underlättar något otroligt.
+          Jag tycker att responsivitet kan vara svårt att få till med vanlig CSS, speciellt med tabeller och formulär. Men med Foundations inbyggda uppdelning av grids och tabellrader och kolumner var det knappt något problem.
+        </p>
 
+        <p>Ett riktigt bra verktyg var den inbyggda <i>stack</i> klassen på tabeller. Det gör att tabellens data får en flex-column design vid mindre bredder.
+          Det var lite krångligt att exkludera det från mellanstora och stora skärmar genom CSS, men det gick.
+          Formulär var rätt likt Milligram med layouten. </p>
+
+        <p>
+          Det enda "problemet" jag egentligen hade med Foundation var att mycket av deras inbyggda verktyg är baserade på sass regler. Det betyder att inbyggda verktyg, så som <i>stack</i> för tabeller, har en förbestämd breakpoint man kan snabbt ändra i en _scss fil. Om man nu kör sass, vilket jag inte gör nu. Då får man arbeta runt ramverkets inställningar lite, och det kan bli omständigt snabbt.
         </p>
 
 
 
+
       </section>
-      
-      <section id="formWrapper">
+
+
+
+
+      <div id="tableWrapper">
         <h3>Tabell och formulär</h3>
+        <table class="hover stack">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Recommend</th>
+              <th>Comments</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Country">Sweden</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Clean beautiful country and capital</td>
+              <td data-label="Rating">4</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Norway</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Perfect ski country and lots of snow in winter. Expensive</td>
+              <td data-label="Rating">3</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Denmark</td>
+              <td data-label="Recommend">No</td>
+              <td data-label="Comments">Strange language and there's only Tuborg to drink</td>
+              <td data-label="Rating">1</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Finland</td>
+              <td data-label="Recommend">No</td>
+              <td data-label="Comments">Country is nice but the people are very quiet and distant</td>
+              <td data-label="Rating">2</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Iceland</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Loved the geysers and the whalewatching. But very expensive</td>
+              <td data-label="Rating">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="formWrapper">
         <form>
           <div class="grid-container">
             <div class="grid x grid-padding-x">
@@ -60,7 +117,7 @@
               </fieldset>
               <label>
                 Comments
-                <textarea placeholder="Great food and perfect hiking trails!"></textarea>
+                <textarea placeholder="Great food and perfect hiking trails!" name="Comments" cols="30" rows="3"></textarea>
               </label>
               <label>Select rating</label>
               <select>
@@ -70,10 +127,12 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
               </select>
+
+              <a class="submit success button">Submit</a>
             </div>
           </div>
         </form>
-      </section>
+      </div>
     </article>
 
   </main>
