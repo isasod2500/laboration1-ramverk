@@ -9,7 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
     "typescript": "~7.0.2",
-    "vite": "^8.3.6"
-  }
+    "vite": "^8.3.7"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.9.0",
+    "milligram": "^1.4.1"
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
