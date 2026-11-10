@@ -1,7 +1,7 @@
 body {
   background-color: rgb(176, 252, 209);
   font-family: "Quicksand", sans-serif;
-  font-size: clamp(1rem, 0.643rem + 1.143vi, 1.5rem);
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
   font-weight: 300;
 }
 
