@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(176, 252, 209);
+  background-color: #b0fcd1;
   font-family: "Quicksand", sans-serif;
   font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
   font-weight: 300;

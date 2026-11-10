@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
-.test-tailwind {
-    color: red;
+@theme {
+    --color-fuchsia-400: #d1b0fc;
+    --color-fuchsia-500: #c599fd;
+    --color-fuchsia-600: #9b4dca;
+    
+    --color-teal-400: #b0fcd1;
+    --my-font: "Inter", sans-serif; 
 }
