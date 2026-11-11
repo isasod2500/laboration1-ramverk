@@ -103,7 +103,7 @@ body {
 }
 
 .indexP {
-  font-size: clamp(1rem, 0.643rem + 1.143vi, 1.3rem);
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
   min-width: 35ch;
   max-width: 50ch;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .publiceringP {
-  font-size: clamp(1rem, 0.643rem + 1.143vi, 1.3rem);
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
   min-width: 35ch;
   max-width: 50ch;
 }
