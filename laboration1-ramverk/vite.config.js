@@ -7,6 +7,12 @@ export default defineConfig({
         tailwindcss(),
     ],
 
+    css: {
+        lightningcss: {
+            errorRecovery: true,
+        },
+    },
+
     build: {
         rollupOptions: {
             input: {
