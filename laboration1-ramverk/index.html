@@ -1,13 +1,80 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>laboration1-ramverk</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboration 1 - CSS Ramverk</title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <ul id="navList">
+        <li>
+          <a href="milligram.html">Milligram</a>
+        </li>
+        <li>
+          <a href="foundation.html">Foundation</a>
+        </li>
+        <li>
+          <a href="tailwind.html">Tailwind</a>
+        </li>
+        <li>
+          <a href="publicering.html">Publicering</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <div id="wrapper">
+      <article id="indexArticle">
+        <section id="indexHeader">
+          <h1>Introduktion till ramverk för CSS</h1>
+        </section>
+        <section id="indexText">
+          <p>Syftet bakom denna laboration är att utforska CSS Ramverk. Nedan finns dem tre jag valt.</p>
+          <div id="frameworkTable">
+            <div id="milligram">
+              <h2>Milligram</h2>
+              <p class="frameworkP">(Minimalistiskt)</p>
+              <img src="public/milligram.svg">
+
+            </div>
+            <div id="foundation">
+              <h2>Foundation</h2>
+              <p class="frameworkP">(Komponentbaserat)</p>
+              <img src="public/foundation.svg">
+            </div>
+            <div id="tailwind">
+              <h2>Tailwind</h2>
+              <p class="frameworkP">(Utility-based)</p>
+              <img src="public/tailwind.svg">
+            </div>
+          </div>
+        </section>
+        <section>
+          <p class="indexP">Ramverk för CSS är bibliotek som underlättar och skyndar på utvecklandet av webbplatser genom att erbjuda färdiga paket med CSS och ibland JavaScript kod.
+            Därför kan man, istället för att manuellt designa en knapp med färg och haptik, helt enkelt leta upp en färdiggjord knapp i biblioteket och implementera den.
+          </p>
+
+          <p class="indexP">
+            Det finns många likheter mellan dem CSS Ramverk jag har valt. Till att börja med är alla ramverk och erbjuder färdiga CSS-paket att implementera.
+            Skillnaderna uppstår i arbetssättet. CSS Ramverk kan vara "Utility-based" eller komponentbaserade.
+          </p>
+          <p class="indexP">
+            Ett utility-based ramverk handlar om att implementera små klasser som var och en gör en specifik sak, som man sedan staplar på varandra.
+            <br>
+            Komponentbaserade ramverk, och traditionell CSS, är baserade på större klasser i en CSS-fil som beskriver komponentens utseende eller funktion.
+          </p>
+        </section>
+    </div>
+  </main>
+
+</body>
+
 </html>

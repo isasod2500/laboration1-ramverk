@@ -1,0 +1,408 @@
+@import "milligram/dist/milligram.min.css";
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+    background-color: #b0fcd1;
+    color: black;
+    font-weight: 300;
+}
+
+#nav .button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+    background-color: #d1b0fc;
+}
+
+#nav .button:hover {
+    background-color: #c599fd;
+}
+
+@media (max-width: 640px) {
+    #nav .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #nav .column {
+
+        flex: 0 0 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+        min-width: 0;
+        text-align: center;
+    }
+
+    #milligramArticle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #milligramHeaders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #milligramHeaders h1 {
+
+        font-weight: 400;
+        font-size: clamp(3rem, 2rem + 1vw, 2.875rem);
+    }
+
+    #milligramHeaders h2 {
+        margin-top: -1rem;
+        
+        font-weight: 400;
+        font-size: clamp(1.625rem, 1.375rem + 1vw, 2.25rem);
+    }
+
+    #milligramText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 55ch;
+        font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
+    }
+
+    #milligramText a {
+        color:rgb(155, 77, 202);
+        margin: 1rem;
+    }
+
+    #milligramText a:hover {
+        
+        background-color: #c599fd;
+        color: white;
+        text-decoration: underline;
+        transition: all 250ms linear;
+    }
+
+
+
+    #tableWrapper {
+        max-width: 90%;
+    }
+
+    #milligramTable {
+        padding: 0.5rem;
+        font-size: clamp(1rem, 0.464rem + 1.714vi, 1.75rem);
+    }
+
+    #milligramTable tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+
+    #milligramTable td:nth-child(even) {
+        text-align: center;
+    }
+
+    #milligramTable td,
+    #milligramTable th {
+        padding: 0.7rem;
+    }
+
+    #milligramTable thead,
+    #milligramTable tbody {
+        width: 100%;
+    }
+
+    #formWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    #formWrapper form {
+        background-color: rgb(238, 237, 237);
+        border: solid grey 1px;
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    #formWrapper fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buttonWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #buttonWrapper .button-primary:hover {
+        background-color: #b17af9;
+    }
+}
+
+
+
+
+@media (min-width: 640px) {
+    #nav .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #nav .column {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #nav .button {
+        font-size: clamp(1.125rem, 0.857rem + 0.857vi, 1.5rem);
+    }
+
+
+    #milligramArticle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #milligramP {
+        font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+        min-width: 35ch;
+        max-width: 50ch;
+    }
+
+
+    #milligramHeaders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #milligramHeaders h1 {
+        color: black;
+        font-weight: 400;
+        font-size: clamp(3rem, 2rem + 1vw, 2.875rem);
+    }
+
+    #milligramHeaders h2 {
+        margin-top: -1rem;
+        color: black;
+        font-weight: 400;
+        font-size: clamp(1.625rem, 1.375rem + 1vw, 2.25rem);
+    }
+
+    #milligramText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 55ch;
+        font-size: clamp(1rem, 0.464rem + 1.714vi, 1.75rem);
+    }
+
+    #milligramText a {
+        margin: 1rem;
+    }
+
+    #milligramText a:hover {
+        border-color: rgb(255, 54, 255);
+        color: rgb(255, 54, 255);
+        text-decoration: underline;
+    }
+
+
+
+    #tableWrapper {
+        max-width: 90%;
+    }
+
+    #milligramTable {
+        padding: 0.5rem;
+        font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+        width: 50;
+    }
+
+    #milligramTable tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    #milligramTable td:nth-child(even) {
+        text-align: center;
+    }
+
+    #milligramTable td,
+    #milligramTable th {
+        padding: 0.7rem;
+    }
+
+    #milligramTable thead,
+    #milligramTable tbody {
+        width: 100%;
+    }
+
+    #formWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        max-width: 550px;
+    }
+
+    #formWrapper form {
+        background-color: rgb(238, 237, 237);
+        border: solid grey 1px;
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+
+    #buttonWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #buttonWrapper .button-primary:hover {
+        background-color: #b17af9;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+    #nav .row {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #nav .column {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #nav .button {
+        font-size: clamp(1.125rem, 0.857rem + 0.857vi, 1.5rem);
+    }
+
+
+    #milligramArticle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #milligramP {
+        font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+        min-width: 35ch;
+        max-width: 50ch;
+    }
+
+
+    #milligramHeaders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #milligramHeaders h1 {
+        color: black;
+        font-weight: 400;
+        font-size: clamp(3rem, 2rem + 1vw, 2.875rem);
+    }
+
+    #milligramHeaders h2 {
+        margin-top: -1rem;
+        color: black;
+        font-weight: 400;
+        font-size: clamp(1.625rem, 1.375rem + 1vw, 2.25rem);
+    }
+
+    #milligramText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 55ch;
+        font-size: clamp(1rem, 0.464rem + 1.714vi, 1.75rem);
+    }
+
+    #milligramText a {
+        margin: 1rem;
+    }
+
+    #milligramText a:hover {
+        border-color: rgb(255, 54, 255);
+        color: rgb(255, 54, 255);
+        text-decoration: underline;
+    }
+
+
+
+    #tableWrapper {
+        max-width: 90%;
+    }
+
+    #milligramTable {
+        padding: 0.5rem;
+        font-size: clamp(0.875rem, 0.429rem + 1.429vi, 1.5rem);
+        width: 50;
+    }
+
+    #milligramTable tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    #milligramTable td:nth-child(even) {
+        text-align: center;
+    }
+
+    #milligramTable td,
+    #milligramTable th {
+        padding: 0.7rem;
+    }
+
+    #milligramTable thead,
+    #milligramTable tbody {
+        width: 100%;
+    }
+
+    #formWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        max-width: 550px;
+    }
+
+    #formWrapper form {
+        background-color: rgb(238, 237, 237);
+        border: solid grey 1px;
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    #buttonWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #buttonWrapper .button-primary:hover {
+        background-color: #b17af9;
+    }
+}

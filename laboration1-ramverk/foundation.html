@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/foundation.css">
+  <title>Foundation Starter Template</title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <div class="grid-container full">
+
+        <div class="grid-x grid-margin-x grid-padding-x small-up-2 medium-up-4">
+          <div class="cell large-auto"><a href="index.html">Startsida</a></div>
+          <div class="cell large-auto"><a href="milligram.html">Milligram</a></div>
+          <div class="cell large-auto"><a href="tailwind.html">Tailwind</a></div>
+          <div class="cell large-auto"><a href="publicering.html">Publicering</a></div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <article id="foundationArticle">
+      <div id="heading-wrapper">
+        <h2>Foundation</h2>
+        <h3>"The most advanced responsive front-end framework in the world"</h3>
+        <img src="public/foundation.svg">
+        <a class="hollow button small" href="https://get.foundation/index.html">Foundations webbplats</a>
+      </div>
+      <section id="foundationText">
+
+        <p class="foundationP">
+          Foundation är ett komponentbaserat ramverk som lägger stor vikt på responsivitet. Många av komponenterna man kan använda sig av, så som knappar och tabeller, innehåller redan regler för responsivitet vilket underlättar något otroligt.
+          Jag tycker att responsivitet kan vara svårt att få till med vanlig CSS, speciellt med tabeller och formulär. Men med Foundations inbyggda uppdelning av grids och tabellrader och kolumner var det knappt något problem.
+        </p>
+
+        <p>Ett riktigt bra verktyg var den inbyggda <i>stack</i> klassen på tabeller. Det gör att tabellens data får en flex-column design vid mindre bredder.
+          Det var lite krångligt att exkludera det från mellanstora och stora skärmar genom CSS, men det gick.
+          Formulär var rätt likt Milligram med layouten. </p>
+
+        <p>
+          Det enda "problemet" jag egentligen hade med Foundation var att mycket av deras inbyggda verktyg är baserade på sass regler. Det betyder att inbyggda verktyg, så som <i>stack</i> för tabeller, har en förbestämd breakpoint man kan snabbt ändra i en _scss fil. Om man nu kör sass, vilket jag inte gör nu. Då får man arbeta runt ramverkets inställningar lite, och det kan bli omständigt snabbt.
+        </p>
+
+
+
+
+      </section>
+
+
+
+
+      <div id="tableWrapper">
+        <h3>Tabell och formulär</h3>
+        <table class="hover stack">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Recommend</th>
+              <th>Comments</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Country">Sweden</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Clean beautiful country and capital</td>
+              <td data-label="Rating">4</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Norway</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Perfect ski country and lots of snow in winter. Expensive</td>
+              <td data-label="Rating">3</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Denmark</td>
+              <td data-label="Recommend">No</td>
+              <td data-label="Comments">Strange language and there's only Tuborg to drink</td>
+              <td data-label="Rating">1</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Finland</td>
+              <td data-label="Recommend">No</td>
+              <td data-label="Comments">Country is nice but the people are very quiet and distant</td>
+              <td data-label="Rating">2</td>
+            </tr>
+            <tr>
+              <td data-label="Country">Iceland</td>
+              <td data-label="Recommend">Yes</td>
+              <td data-label="Comments">Loved the geysers and the whalewatching. But very expensive</td>
+              <td data-label="Rating">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="formWrapper">
+        <form>
+          <div class="grid-container">
+            <div class="grid x grid-padding-x">
+              <div class="medium-6 cell">
+                <label>Country
+                  <input type="text" placeholder="Germany">
+                </label>
+              </div>
+              <fieldset class="fieldset">
+                <legend>Do you recommend travelling here?</legend>
+                <input id="recommend" type="checkbox"><label for="recommend">Yes</label>
+                <input id="notrecommend" type="checkbox"><label for="notrecommend">No</label>
+              </fieldset>
+              <label>
+                Comments
+                <textarea placeholder="Great food and perfect hiking trails!" name="Comments" cols="30" rows="3"></textarea>
+              </label>
+              <label>Select rating</label>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+              <a class="submit success button">Submit</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </article>
+
+  </main>
+</body>
+
+</html>

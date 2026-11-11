@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/tailwind.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-teal-400 font-(family-name:--my-font)">
+  <header class="flex flex-col text-center">
+    <nav class="max-w-2xl self-center">
+      <div class="grid grid-cols-2 grid-rows-2 mx-4 gap-8 rounded-xl text-white mt-4 w-full sm:grid-cols-4 sm:grid-rows-1 mb-2 sm:mb-0">
+        <div>
+          <a class="flex items-center justify-center w-full h-full uppercase bg-fuchsia-400 hover:bg-fuchsia-500 border-1 border-fuchsia-600 rounded-sm p-2 text-sm" href="index.html">Startsida</a>
+        </div>
+        <div>
+          <a class="flex items-center justify-center w-full h-full uppercase bg-fuchsia-400 hover:bg-fuchsia-500 border-1 border-fuchsia-600 rounded-sm p-2 text-sm" href="milligram.html">Milligram</a>
+        </div>
+        <div>
+          <a class="flex items-center justify-center w-full h-full uppercase bg-fuchsia-400 hover:bg-fuchsia-500 border-1 border-fuchsia-600 rounded-sm p-2 text-sm" href="foundation.html">Foundation</a>
+        </div>
+        <div>
+          <a class="flex items-center justify-center w-full h-full uppercase bg-fuchsia-400 hover:bg-fuchsia-500 border-1 border-fuchsia-600 rounded-sm p-2 text-sm" href="publicering.html">Publicering</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article class="text-center lg:text-left flex flex-col justify-center w-full">
+      <div class="flex flex-col my-5 justify-center text-center">
+        <h1 class="text-2xl font-bold">Tailwind</h1>
+        <h2 class="text-l italic max-w-md mx-auto ">"Rapidly build modern websites without ever leaving your HTML"</h2>
+        <img class="w-[25%] h-auto self-center max-w-[140px]" src="public/tailwind.svg" alt="Tailwind CSS">
+        <button class="bg-teal-400 border-1 border-fuchsia-600 self-center h-[45px] w-48 transition delay-50 duration-150 ease-in hover:bg-fuchsia-500 hover:text-white hover:cursor-pointer rounded" href="https://tailwindcss.com/">Tailwinds webbplats</button>
+      </div>
+      <p class="text-center max-w-[55ch] self-center sm:text-left my-3">
+        Tailwind är en av dem mest populära ramverken för CSS och bygger på att man aldrig ska behöva gå in på css filer och styra utseendet på webbplatsen.
+        Ramverket är skapat så att all design kan göras i HTML med klasser.
+        <br>
+        Behöver man skriva över vissa förinställda inställningar så som färger kan man lägga det under en @theme variabel i CSS och välja en existerande färg, sedan ange sin egna på den.
+        <br>
+        Till exempel är knapparna på denna undersida styra till '#d1b0fc' när dem ursprungligen är '#e879f9'.
+      </p>
+      <p class="text-center max-w-[55ch] self-center sm:text-left my-3">
+        Det jag gillar med ramverket, vilket förvånade mig, är att man kan göra mer eller mindre allting i HTML. Dem första exemplen jag läste var otroligt röriga och fula men nu när jag själv skapat designen och lärt mig hur man läser den är det mycket bättre.
+        </p>
+      <p class="text-center max-w-[55ch] self-center sm:text-left my-3">
+        Å andra sidan är mängden text i HTMLen en nackdel för nybörjare (som jag). Även fast det går rätt snabbt att lära sig hur man ska skriva saker blir det lätt rörigt. <br>
+        Det gäller att man snabbt skapar någon sorts struktur i hur man designar sina komponenter. Att man lägger displaytyp först, sedan bredd/höjd, padding och margin osv. <br>
+        Likt dem andra ramverken finns det förinställda utseenden som kan hamna lite ivägen, som man måste ändra på. <br>Till exempel med färgerna. Det finns ett relativt stort utbud redan från början, men utgår man från en färg utanför dessa förvalda måste man själv gå in och ändra.
+    </p>
+
+
+      <div class="flex flex-col justify-center mt-5">
+        <h2 class="text-xl font-bold max-w-md mx-auto">Tabell och formulär</h2>
+        <table class="table-fixed border-1 border-gray-500 bg-gray-300 mx-4 sm:text-center sm:max-w-3xl self-center">
+          <thead>
+            <tr>
+              <th class="text-sm px-2 sm:text-base">Country</th>
+              <th class="text-sm px-2 sm:text-base">Recommend</th>
+              <th class="text-sm px-2 sm:text-base max-w-[20ch]">Comments</th>
+              <th class="text-sm px-2 sm:text-base">Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="even:bg-gray-300 odd:bg-gray-100">
+              <td class="text-s sm:text-s" class="text-xs sm:text-s">Sweden</td>
+              <td class="text-s sm:text-s" class="text-xs sm:text-s">Yes</td>
+              <td class="text-s sm:text-s" class="text-xs sm:text-s">Clean beautiful country and capital</td>
+              <td class="text-s sm:text-s" class="text-xs sm:text-s">4</td>
+            </tr>
+            <tr class="even:bg-gray-300 odd:bg-gray-100">
+              <td class="text-s sm:text-s">Norway</td>
+              <td class="text-s sm:text-s">Yes</td>
+              <td class="text-s sm:text-s">Perfect ski country and lots of snow in winter. Expensive</td>
+              <td class="text-s sm:text-s">3</td>
+            </tr>
+            <tr class="even:bg-gray-300 odd:bg-gray-100">
+              <td class="text-s sm:text-s">Denmark</td>
+              <td class="text-s sm:text-s">No</td>
+              <td class="text-s sm:text-s">Strange language and there's only Tuborg to drink</td>
+              <td class="text-s sm:text-s">1</td>
+            </tr>
+            <tr class="even:bg-gray-300 odd:bg-gray-100">
+              <td class="text-s sm:text-s">Finland</td>
+              <td class="text-s sm:text-s">No</td>
+              <td class="text-s sm:text-s">Country is nice but the people are very quiet and distant</td>
+              <td class="text-s sm:text-s">2</td>
+            </tr>
+            <tr class="even:bg-gray-300 odd:bg-gray-100">
+              <td class="text-s sm:text-s">Iceland</td>
+              <td class="text-s sm:text-s">Yes</td>
+              <td class="text-s sm:text-s">Loved the geysers and the whalewatching. But very expensive</td>
+              <td class="text-s sm:text-s">5</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="flex flex-col ">
+        <form class="flex flex-col justify-center rounded-m">
+          <fieldset class="flex flex-col bg-gray-200 my-3 rounded-lg border-1 border-gray-500 sm:max-w-3xl self-center p-5 sm:text-center">
+            <label for="country" class="mt-2 -mb-2">Country</label>
+            <input type="text" placeholder="Germany" class="border-1 border-gray-500 bg-gray-100 self-center rounded-sm p-1 w-xs3 my-2" id="country">
+            <label class="mt-4 -mb-2" for="recommend">Do you recommend traveling here?</label>
+            <input type="checkbox" id="recommend" class="mt-2">
+            <label for="comments" class="mt-2 -mb-2">Comment</label>
+            <textarea placeholder="Great food and perfekt hiking trails!" class="border-1 border-gray-500 bg-gray-100 self-center rounded-sm p-1 w-xs my-2" id="comments"></textarea>
+            <label for="rating" class="mt-2">Rating</label>
+            <select id="rating" class="text-center bg-gray-100 border-1 border-gray-400 rounded-sm w-24 self-center">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+   
+              <input class="rounded-sm bg-fuchsia-400 mt-3 p-1 w-24 self-center hover:bg-fuchsia-500 cursor-pointer border-1 border-fuchsia-600" type="submit" value="Submit">
+
+          </fieldset>
+        </form>
+      </div>
+    </article>
+
+  </main>
+
+</body>
+
+</html>
