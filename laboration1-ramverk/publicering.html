@@ -31,19 +31,22 @@
   <main>
     <article id="publiceringArticle">
       <section id="publiceringHeader">
-        <h1>Introduktion till ramverk för CSS</h1>
+        <h1>Publicering</h1>
       </section>
       <section id="publiceringText">
         <section>
           <p class="publiceringP">
             Jag har valt att använda mig av Netlify för att publicera denna webbplats.
             Det är en plattform jag använt tidigare och fungerar bra med mina frontend-projekt. Den har support för Node.JS och npm och vid fel så visar den tydligt vad som måste ändras.
+
+            För versionshantering använder jag github. Samma sak där, den har jag använt nu ett tag och blivit van med hur det fungerar.
           </p>
           <p class="publiceringP">
-            
+            Netlify går att använda gratis med begränsade "credits", dvs mängden deploys, och man får även det mesta med applikationen så som koplingar till Git, egna domännamn, AI och databasmöjligheter med mera.
           </p>
           <p class="publiceringP">
-            
+            Man publicerar till Netlify genom att antingen ladda upp sina filer eller koppla direkt till github. I mitt fall kopplade jag direkt till mitt github. Då valde jag vilket repository den ska köra ifrån och vilka kommandom som behövs för att bygga och installera alla paket i Netlify.
+            I mitt fall blev det "npm run build" som då körs av Netlify i katalogen för projektet, så får man en överblick över hur utförandet går och eventuella fel.
           </p>
 
         </section>
